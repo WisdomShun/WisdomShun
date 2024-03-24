@@ -15,7 +15,7 @@
         "name": "小朱",
         "email": "zhu118*******@gmail.com",
         "mobile": "151****7318",
-        "workExpYear": "3年",
+        "workExpYear": "5年",
         "workPlace": "上海/苏州",
         "positionTitle": "客户端工程师"
     },
@@ -36,9 +36,9 @@
             "department_name": "视频会议研发部门",
             "work_time": [
                 "2021.06",
-                null
+                "至今"
             ],
-            "work_desc": "1. 担任视频会议研发团队CI/云构建/发版发车等效率工程的负责人\n2. 负责视频会议PSTN/SIP/H323业务上的产品能力调研开发和建设\n3. 负责新员工培养，快速融入正常需求开发",
+            "work_desc": "1. 研发效率提升(本地构建效率，云构建效率,研发流程效率，研发流程自动化, CI/CD)\n2. 代码分析和重构(小窗MVC规范化重构，Module模块化数据驱动重构)\n3. 自定义静态检测(chromium-common-check)\n4. 疑难杂症bug排查（内存泄漏，UI卡死卡顿，野指针crash，chromium内核相关问题\n5. 常规视频会议需求开发",
             "dataIndex": 0
         },
         {
@@ -54,47 +54,43 @@
     ],
     "skillList": [
         {
-            "skill_name": "C/C++",
-            "skill_desc": "",
+            "skill_name": "语言方向",
+            "skill_desc": "C/C++/Objective-C, Python, TypeScript, Chromium, 多线程，Windows/macOS Native开发",
             "skill_level": 90
         },
         {
-            "skill_name": "Python",
-            "skill_level": 80
+            "skill_name": "技能方向",
+            "skill_desc": "卡死，卡顿，crash分析治理",
+            "skill_level": 90
         },
         {
-            "skill_name": "效率工程",
-            "skill_desc": "较丰富的效率工程开发经验",
+            "skill_name": "效率方向",
+            "skill_desc": "研发流程自动化，构建提速，代码重构及规范化",
             "skill_level": 90
         }
     ],
     "projectList": [
         {
-            "project_name": "数据作战室",
-            "project_role": "前端负责人",
-            "project_time": "2019.04 - 2020.06",
-            "project_desc": "面向总裁和高管以及决策 BI 的数字化经营决策和管理协同产品。提供一站式的数据化经营决策和管理协同功能，让高管高效获取决策信息，并提升管理效率。",
-            "project_content": "1. 项目从0到1的框架设计和开发 2. 产品体验精雕细琢的打磨 3. 建立稳定性保障机制。目前仍在迭代中，帮助提升高管业务决策效率"
+            "project_name": "研发效率提升专项",
+            "project_role": "独立负责人",
+            "project_time": "2021.10 - 2022.06",
+            "project_desc": "视频会议基于Chromium开发，本地和云构建编译耗时都非常大，亟需优化；随着业务量增多，POM制定了封板日程和阶段规则，回归期间需要很多研发手动操作的编译和MR操作，耗时且重复",
+            "project_content": "\n1. 本地构建，引入sccache，前向声明改造\n2. 云构建，改造增量缓存方案，使用Sailfish分布式构建，Desktop构建流程改造为快打包\n3. 研发流程，基于飞书机器人开发自动化发车流程和工具，例如自动构建和通知，cp检测，自动封板，产物精简等"
         },
         {
-            "project_name": "DeepInsight",
-            "project_role": "可视分析负责人",
-            "project_time": "2018.07 - 2019.04 / 2020.07 - 至今",
-            "project_desc": "DeepInsight 是蚂蚁集团自主研发的自助式 BI 数据洞察分析平台，面向企业分析人员、业务人员和开发人员，帮助蚂蚁集团实现精细化运营。",
-            "project_content": "BI 平台工具核心部分是报表制作，也就是通过数据连接、可视化配置形成图表物料之后，通过拖拽方式进行页面编排，最终形成报表页面进行发布的过程。\n1. 主导开放能力建设，拉通产品、设计建设和扩展可视化图形，提升丰富度\n2. 产品体验优化，尤其是对 ECharts 的体验顽疾进行攻克\n3. 主导可视化能力建设：业务标准化图表库建设(通用组件设计和开发经验丰富)、促进数据分析能力增强等可视化一体化建设"
+            "project_name": "Chromium 静态检测专项",
+            "project_role": "独立责任人",
+            "project_time": "2023.10 - 2024.03",
+            "project_desc": "通过对线上历史卡顿，卡死Case的总结，发现有不少不合理的调用，导致了UI异步Layout/SetBounds死循环，为避免此类问题，前置检查到CI阶段",
+            "project_content": "\n1. 梳理Chromium下开发规范\n2. 基于clang-tidy，编写自定义静态检查规则\n3. 梳理并修正存量代码问题\n4. 定期全量检测\n5. CI卡点增量检查"
         },
         {
-            "project_name": "G2、G2Plot",
+            "project_name": "代码重构",
             "project_role": "核心开发者",
-            "project_time": "2019 - 至今",
-            "project_desc": "G2 是基于图形语法理论的可视化渲染引擎，G2Plot 是在 G2 基础上封装的开箱即用的统计可视化图表库",
-            "project_content": "AntV 可视化建设，赋能整个蚂蚁和阿里集团统计可视化分析相关业务。负责 AntV 系列: AntV 官网、G 渲染引擎、 G2、G2Plot、ThemeSet 主题构建器等开源项目的研发工作。"
+            "project_time": "2022.08 - 2022.10",
+            "project_content": "\n1. 视频会议小窗代码重构，存在以下问题：controller当作manager使用，多个view持有相同的controller，controller生命周期定义不清，controller职责越界(子view逻辑未收敛模块化)，Observer多次通知，小窗显影逻辑圈复杂度过高等\n2. 视频会议模块化改造，基于数据驱动的业务细化为到具体子业务模块下，收敛数据边界，限制业务模块互访"
         }
     ],
-    "workList": [],
-    "aboutme": {
-        "aboutme_desc": "🌱 Focus on data visualization and analysis 😈 能力项：沟通协调能力、执行力\n    自驱型前端工程师，三年多大型复杂产品开发经验，负责蚂蚁集团 BI 产品 DeepInsight 的可视化建设，参与了从图表库到 BI 产品力的一体化建设，对商业智能领域的数据可视化建设有较为丰富的经验。\n    参与 AntV 团队开源项目 G2、G2Plot 的研发，目前是 G2Plot 的主要负责人。\n    "
-    },
     "theme": {
         "color": "#2f5785",
         "tagColor": "#8bc34a"
